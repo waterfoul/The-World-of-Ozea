@@ -1,0 +1,23 @@
+{
+  "location": {
+    "row": 2,
+    "col": 15
+  },
+  "alignment": {
+    "moral": "neutral",
+    "ethical": "neutral"
+  },
+  "type": "small town",
+  "modifiers": {
+    "corruption": 0,
+    "crime": 0,
+    "economy": 0,
+    "law": 0,
+    "lore": 0,
+    "society": 0
+  },
+  "qualities": [],
+  "danger": 0,
+  "disadvantages": [],
+  "government": "autocracy"
+}

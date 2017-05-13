@@ -1,0 +1,77 @@
+@import './data/worldinfo.json';
+
+$grid-size: 32px;
+
+.world-grid-container {
+  background-image: url('./grass.jpg');
+  background-repeat: repeat;
+  width: $width * $grid-size;
+  height: $height * $grid-size;
+}
+
+.world-grid {
+  $rows: '';
+  @for $i from 1 through $width {
+    .col-#{$i} {
+      grid-column: $i;
+      width: $grid-size;
+      height: $grid-size;
+      background-size: $grid-size $grid-size;
+    }
+  }
+  @for $i from 1 through $height {
+    .row-#{$i} {
+      grid-row: $i;
+    }
+  }
+  background-image:
+          repeating-linear-gradient(
+                          0deg,
+                          #CCC,
+                          transparent 1px,
+                          transparent $grid-size
+          ),
+          repeating-linear-gradient(
+                          -90deg,
+                          #CCC,
+                          transparent 1px,
+                          transparent $grid-size
+          );
+  width: $width * $grid-size;
+  height: $height * $grid-size;
+  display: grid;
+  grid-template-columns: repeat($width, 1fr);
+  grid-template-rows: repeat($height, 1fr);
+}
+
+
+.hasCard {
+  position: relative;
+  cursor: default;
+
+
+  .card {
+    display: none;
+    background-color: gray;
+    width: 200px;
+
+    .label {
+      display: inline-block;
+      width: 50%;
+    }
+    .data {
+      display: inline-block;
+      width: 50%;
+      text-transform: capitalize;
+    }
+  }
+
+  &:hover {
+    .card {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 100%;
+    }
+  }
+}
