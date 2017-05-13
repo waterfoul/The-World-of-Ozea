@@ -1,2 +1,14 @@
 .settlement {
-  background-image: url("./house.png"); }
+  background-image: url("./settlements/base.png"); }
+
+.thorpe {
+  background-image: url("./settlements/thorpe.png"); }
+
+.village {
+  background-image: url("./settlements/village.png"); }
+
+.small.town {
+  background-image: url("./settlements/small-town.png"); }
+
+.large.town {
+  background-image: url("./settlements/large-town.png"); }

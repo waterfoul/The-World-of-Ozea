@@ -2,7 +2,14 @@
   background-image: url("./grass.jpg");
   background-repeat: repeat;
   width: 1600px;
-  height: 800px; }
+  height: 800px;
+  float: left; }
+
+.key .icon {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  background-size: 32px 32px; }
 
 .world-grid {
   background-image: repeating-linear-gradient(0deg, #CCC, transparent 1px, transparent 32px), repeating-linear-gradient(-90deg, #CCC, transparent 1px, transparent 32px);
@@ -312,10 +319,14 @@
   .world-grid .row-25 {
     grid-row: 25; }
 
+.coords.hasCard .card {
+  width: auto; }
+
 .hasCard {
   position: relative;
   cursor: default; }
   .hasCard .card {
+    z-index: 99;
     display: none;
     background-color: gray;
     width: 200px; }

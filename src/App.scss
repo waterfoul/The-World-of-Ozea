@@ -7,6 +7,16 @@ $grid-size: 32px;
   background-repeat: repeat;
   width: $width * $grid-size;
   height: $height * $grid-size;
+  float: left;
+}
+
+.key {
+  .icon {
+    width: $grid-size;
+    height: $grid-size;
+    display: inline-block;
+    background-size: $grid-size $grid-size;
+  }
 }
 
 .world-grid {
@@ -44,6 +54,10 @@ $grid-size: 32px;
   grid-template-rows: repeat($height, 1fr);
 }
 
+.coords.hasCard .card {
+  width: auto;
+}
+
 
 .hasCard {
   position: relative;
@@ -51,6 +65,7 @@ $grid-size: 32px;
 
 
   .card {
+    z-index: 99;
     display: none;
     background-color: gray;
     width: 200px;

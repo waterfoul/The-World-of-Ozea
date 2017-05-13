@@ -14,6 +14,12 @@ export const Settlement = ({name, data}) => (
                     {name}
                 </div>
                 <div className="label">
+                    Location
+                </div>
+                <div className="data">
+                    {data.location.col}x{data.location.row}
+                </div>
+                <div className="label">
                     Alignment
                 </div>
                 <div className="data">
