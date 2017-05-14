@@ -1,4 +1,103 @@
 {
   "width": 50,
-  "height": 25
+  "height": 25,
+  "mountains": [
+    {
+      "from": {
+        "row": 3,
+        "col": 20
+      },
+      "to": {
+        "row": 26,
+        "col": 35
+      }
+    },
+    {
+      "from": {
+        "row": 3,
+        "col": 19
+      },
+      "to": {
+        "row": 26,
+        "col": 34
+      }
+    },
+    {
+      "from": {
+        "row": 3,
+        "col": 18
+      },
+      "to": {
+        "row": 26,
+        "col": 34
+      }
+    },
+    {
+      "from": {
+        "row": 12,
+        "col": 23
+      },
+      "to": {
+        "row": 17,
+        "col": 27
+      }
+    }
+  ],
+  "objects": [
+    {
+      "start": {
+        "col": 38,
+        "row": 13
+      },
+      "end": {
+        "col": 51,
+        "row": 26
+      },
+      "class": "forest"
+    },
+    {
+      "start": {
+        "col": 12,
+        "row": 6
+      },
+      "end": {
+        "col": 20,
+        "row": 13
+      },
+      "class": "forest"
+    },
+    {
+      "start": {
+        "row": 9,
+        "col": 1
+      },
+      "end": {
+        "row": 26,
+        "col": 24
+      },
+      "class": "river-1"
+    },
+    {
+      "start": {
+        "row": 4,
+        "col": 7
+      },
+      "end": {
+        "row": 10,
+        "col": 19
+      },
+      "class": "river-2"
+    },
+    {
+      "start": {
+        "row": 10,
+        "col": 25
+      },
+      "end": {
+        "row": 16,
+        "col": 51
+      },
+      "class": "river-3"
+    }
+  ]
 }

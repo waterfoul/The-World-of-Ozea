@@ -3,7 +3,7 @@
 $grid-size: 32px;
 
 .world-grid-container {
-  background-image: url('./grass.jpg');
+  background-image: url('images/grass.jpg');
   background-repeat: repeat;
   width: $width * $grid-size;
   height: $height * $grid-size;
@@ -19,21 +19,85 @@ $grid-size: 32px;
   }
 }
 
+.mountain {
+  background-image: url('./images/mountain.png');
+}
+
+.river-1 {
+  background-image: url('./images/rivers/1.png');
+}
+
+.river-2 {
+  background-image: url('./images/rivers/2.png');
+}
+
+.river-3 {
+  background-image: url('./images/rivers/3.png');
+}
+
+.forest {
+  background-size: 64px 64px !important;
+  background-repeat: repeat;
+  background-image: url('./images/trees.png');
+}
+
 .world-grid {
+  .col-base {
+    width: $grid-size;
+    height: $grid-size;
+    background-size: $grid-size $grid-size;
+  }
+  .col-end-base {
+    width: auto;
+    background-size: 100% 100%;
+  }
+
   $rows: '';
   @for $i from 1 through $width {
     .col-#{$i} {
+      @extend .col-base;
       grid-column: $i;
-      width: $grid-size;
-      height: $grid-size;
-      background-size: $grid-size $grid-size;
+    }
+    .col-end-#{$i} {
+      @extend .col-end-base;
+      grid-column-end: $i;
     }
   }
+
+  .col-end-#{$width + 1} {
+    width: auto;
+    grid-column-end: $width + 1;
+    @extend .col-end-base;
+  }
+
   @for $i from 1 through $height {
     .row-#{$i} {
-      grid-row: $i;
+      grid-row-start: $i;
+      grid-row-end: $i + 1;
+    }
+    .row-end-#{$i} {
+      height: auto;
+      grid-row-end: $i;
     }
   }
+
+  .row-end-#{$height + 1} {
+    height: auto;
+    grid-row-end: $height + 1;
+  }
+
+  width: $width * $grid-size;
+  height: $height * $grid-size;
+  display: grid;
+  grid-template-columns: repeat($width, 1fr);
+  grid-template-rows: repeat($height, 1fr);
+}
+
+.world-grid-display {
+  @extend .col-1;
+  @extend .row-1;
+  @extend .row-end-#{$height + 1};
+  @extend .col-end-#{$width + 1};
   background-image:
           repeating-linear-gradient(
                           0deg,
@@ -49,9 +113,6 @@ $grid-size: 32px;
           );
   width: $width * $grid-size;
   height: $height * $grid-size;
-  display: grid;
-  grid-template-columns: repeat($width, 1fr);
-  grid-template-rows: repeat($height, 1fr);
 }
 
 .coords.hasCard .card {

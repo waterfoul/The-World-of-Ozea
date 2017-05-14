@@ -14,16 +14,35 @@ settlementsCtx.keys().forEach((key) => {
 class App extends Component {
     render() {
         const coords = [];
+        const mountains = [];
         for(let i = 1; i <= worldinfo.width; i++) {
             for(let j = 1; j <= worldinfo.height; j++) {
                 coords.push(<div className={`icon col-${i} row-${j} hasCard coords`}><div className="card">{i}x{j}</div></div>);
             }
         }
+        worldinfo.mountains.forEach((m) => {
+            const colDiff = m.to.col - m.from.col;
+            const rowDiff = m.to.row - m.from.row;
+            const colIncr = colDiff / Math.max(Math.abs(rowDiff), Math.abs(colDiff));
+            const rowIncr = rowDiff / Math.max(Math.abs(rowDiff), Math.abs(colDiff));
+            let col = m.from.col;
+            let row = m.from.row;
+            do {
+                mountains.push(<div className={`icon col-${Math.floor(col)} row-${Math.floor(row)} hasCard mountain`}><div className="card">{Math.floor(col)}x{Math.floor(row)}</div></div>);
+                col += colIncr;
+                row += rowIncr;
+            } while (col !== m.to.col && row !== m.to.row);
+        });
         return (
             <div className="App">
                 <div className="world-grid-container">
                     <div className="world-grid">
+                        {worldinfo.objects.map((o) => (
+                            <div className={`icon col-${o.start.col} row-${o.start.row} col-end-${o.end.col} row-end-${o.end.row} ${o.class}`} />
+                        ))}
                         {coords}
+                        {mountains}
+                        <div className="world-grid-display"/>
                         {settlements.map((info, i) => <Settlement key={i} {...info}/>)}
                     </div>
                 </div>
