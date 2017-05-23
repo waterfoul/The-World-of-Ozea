@@ -1,6 +1,10 @@
 {
   "width": 50,
   "height": 25,
+  "players": {
+    "row": 13,
+    "col": 11
+  },
   "mountains": [
     {
       "from": {

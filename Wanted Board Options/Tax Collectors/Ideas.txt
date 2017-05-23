@@ -1,0 +1,14 @@
+http://megacosm.morgajel.net/jobposting?seed=578605
+
+This one will take the form of two wanted posters
+
+Looking for new Tax Collectors. Contact ___ at the ____.
+
+The players Locate a collection of NPCS to extract taxes from them.
+Dialog and amount should be based on how poor the town is and the corruption level. 
+Some of the NPCs will refuse or can't pay, The players CAN pay it out of poket themselves
+If the players don't shake everyone down the Tax Collector will get enraged and send the kings gaurd after them. 
+The difficulty of the encounter will be dependant on te level of failure
+The players can attempt to fight or flee before they arrive
+
+Use guard encounters

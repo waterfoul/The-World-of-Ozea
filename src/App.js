@@ -44,6 +44,7 @@ class App extends Component {
                         {mountains}
                         <div className="world-grid-display"/>
                         {settlements.map((info, i) => <Settlement key={i} {...info}/>)}
+						<div className={`players col-${worldinfo.players.col} row-${worldinfo.players.row}`} ><div className={`icon`} /></div>
                     </div>
                 </div>
                 <div className="key">

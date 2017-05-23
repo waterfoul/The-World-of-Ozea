@@ -11,6 +11,17 @@
   display: inline-block;
   background-size: 32px 32px; }
 
+.players {
+  height: 0px !important;
+  z-index: 0;
+  overflow: visible;
+  pointer-events: none; }
+  .players .icon {
+    width: 32px;
+    height: 32px;
+    background-size: 32px 32px;
+    background-image: url("./images/players.png"); }
+
 .mountain {
   background-image: url("./images/mountain.png"); }
 

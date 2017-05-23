@@ -19,6 +19,19 @@ $grid-size: 32px;
   }
 }
 
+.players {
+  height:0px !important;
+  z-index: 0;
+  overflow:visible;
+  pointer-events:none;
+  .icon {
+    width: $grid-size;
+    height: $grid-size;
+    background-size: $grid-size $grid-size;
+	background-image: url('./images/players.png');
+  }
+}
+
 .mountain {
   background-image: url('./images/mountain.png');
 }
