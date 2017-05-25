@@ -2,6 +2,10 @@
 
 $grid-size: 32px;
 
+body {
+	margin: 0;
+}
+
 .world-grid-container {
   background-image: url('images/grass.jpg');
   background-repeat: repeat;
@@ -137,21 +141,27 @@ $grid-size: 32px;
   position: relative;
   cursor: default;
 
-
+  $card-width: 600px;
+  $label-width: 151px;
   .card {
     z-index: 99;
     display: none;
     background-color: gray;
-    width: 200px;
+    width: $card-width;
 
     .label {
       display: inline-block;
-      width: 50%;
+	  vertical-align: top;
+      width: $label-width;
     }
     .data {
       display: inline-block;
-      width: 50%;
+      width: $card-width - $label-width;
       text-transform: capitalize;
+	  &.nocaps, ul {
+		text-transform: none;
+	  }
+	  
     }
   }
 

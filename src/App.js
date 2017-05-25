@@ -33,6 +33,7 @@ class App extends Component {
                 row += rowIncr;
             } while (col !== m.to.col && row !== m.to.row);
         });
+		let party = window.location.search.substr(1) != 'party=0';
         return (
             <div className="App">
                 <div className="world-grid-container">
@@ -44,7 +45,7 @@ class App extends Component {
                         {mountains}
                         <div className="world-grid-display"/>
                         {settlements.map((info, i) => <Settlement key={i} {...info}/>)}
-						<div className={`players col-${worldinfo.players.col} row-${worldinfo.players.row}`} ><div className={`icon`} /></div>
+						{party ? (<div className={`players col-${worldinfo.players.col} row-${worldinfo.players.row}`} ><div className={`icon`} /></div>) : null}
                     </div>
                 </div>
                 <div className="key">

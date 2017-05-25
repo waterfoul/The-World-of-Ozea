@@ -9,11 +9,14 @@
     "react-dom": "^15.5.4"
   },
   "devDependencies": {
+    "chrome-remote-interface": "^0.22.0",
     "concurrently": "^3.4.0",
+    "minimist": "^1.2.0",
     "node-horseman": "^3.3.0",
     "node-sass-chokidar": "^0.0.1",
     "node-sass-json-importer": "^3.0.2",
     "phantomjs-prebuilt": "^2.1.14",
+    "png-crop": "0.0.1",
     "react-scripts": "0.9.5",
     "request": "^2.81.0"
   },

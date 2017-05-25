@@ -4,10 +4,11 @@
     "col": 17
   },
   "alignment": {
-    "moral": "neutral",
-    "ethical": "neutral"
+    "moral": "chaotic",
+    "ethical": "evil"
   },
   "type": "thorpe",
+  "story": "",
   "modifiers": {
     "corruption": 0,
     "crime": 0,
@@ -16,8 +17,11 @@
     "lore": 0,
     "society": 0
   },
+  "localCasters": 0,
+  "baseLimit": 0,
+  "purchaseLimit": 0,
   "qualities": [],
   "danger": 0,
   "disadvantages": [],
-  "government": "autocracy"
+  "government": "secret syndicate"
 }
