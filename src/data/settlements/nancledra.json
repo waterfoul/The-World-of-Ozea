@@ -1,27 +1,32 @@
 {
-  "location": {
-    "row": 16,
-    "col": 17
-  },
-  "alignment": {
-    "moral": "chaotic",
-    "ethical": "evil"
-  },
-  "type": "thorpe",
-  "story": "",
-  "modifiers": {
-    "corruption": 0,
-    "crime": 0,
-    "economy": 0,
-    "law": 0,
-    "lore": 0,
-    "society": 0
-  },
-  "localCasters": 0,
-  "baseLimit": 0,
-  "purchaseLimit": 0,
-  "qualities": [],
-  "danger": 0,
-  "disadvantages": [],
-  "government": "secret syndicate"
+	"location": {
+		"row": 16,
+		"col": 17
+	},
+	"alignment": {
+		"moral": "chaotic",
+		"ethical": "evil"
+	},
+	"type": "thorpe",
+	"story": [
+		"Heralded as a cesspool of depravity and filth you should be able to find someone to acquire anything you need.",
+		"whether or not you will be willing to pay the price or go along with their methods is another story"
+	],
+	"modifiers": {
+		"corruption": 0,
+		"crime": 0,
+		"economy": 0,
+		"law": 0,
+		"lore": 0,
+		"society": 0
+	},
+	"localCasters": 0,
+	"baseLimit": 0,
+	"purchaseLimit": 0,
+	"qualities": [
+		"decadent"
+	],
+	"danger": 0,
+	"disadvantages": [],
+	"government": "secret syndicate"
 }

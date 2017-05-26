@@ -1,27 +1,37 @@
 {
-  "location": {
-    "row": 18,
-    "col": 30
-  },
-  "alignment": {
-    "moral": "neutral",
-    "ethical": "neutral"
-  },
-  "type": "thorpe",
-  "story": "",
-  "modifiers": {
-    "corruption": 0,
-    "crime": 0,
-    "economy": 0,
-    "law": 0,
-    "lore": 0,
-    "society": 0
-  },
-  "localCasters": 0,
-  "baseLimit": 0,
-  "purchaseLimit": 0,
-  "qualities": [],
-  "danger": 0,
-  "disadvantages": [],
-  "government": "autocracy"
+	"location": {
+		"row": 18,
+		"col": 30
+	},
+	"cssClass": "pin-bottom",
+	"alignment": {
+		"moral": "lawful",
+		"ethical": "good"
+	},
+	"type": "thorpe",
+	"story": [
+		"Built upon a magicial spring, this place has become known as a neutral ground of sorts. The spring's ability",
+		"to make everyone understandable is very useful in this endevor as it allows for parties who would otherwise",
+		"not understand each other to converse and come to agreements. The same effect can also cause more deadly",
+		"disagreements since it attracts groups on opposite sides of long feuds, thus the residents act more as gaurds",
+		"of the spring and rely on donations and trade to sustain the settlement"
+	],
+	"modifiers": {
+		"corruption": 0,
+		"crime": 0,
+		"economy": 0,
+		"law": 5,
+		"lore": 0,
+		"society": 0
+	},
+	"localCasters": 0,
+	"baseLimit": 0,
+	"purchaseLimit": 0,
+	"qualities": [
+		"hallow",
+		"magical polyglot"
+	],
+	"danger": 0,
+	"disadvantages": [],
+	"government": "theocracy"
 }

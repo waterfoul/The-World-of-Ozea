@@ -1,30 +1,33 @@
 {
-  "location": {
-    "row": 13,
-    "col": 11
-  },
-  "alignment": {
-    "moral": "neutral",
-    "ethical": "neutral"
-  },
-  "type": "small town",
-  "story": "Well known as a hub for adventuring, hailing cove exudes a bright and vibrant atmosphere. There is a constant hustle and bustle and people can be seen arriving and leaving on a regular basis",
-  "modifiers": {
-    "corruption": 0,
-    "crime": 0,
-    "economy": 0,
-    "law": 0,
-    "lore": 0,
-    "society": 0
-  },
-  "localCasters": 0,
-  "baseLimit": 0,
-  "purchaseLimit": 0,
-  "qualities": [
-	"adventure site",
-	"broad minded"
-  ],
-  "danger": 0,
-  "disadvantages": [],
-  "government": "autocracy"
+	"location": {
+		"row": 13,
+		"col": 11
+	},
+	"alignment": {
+		"moral": "neutral",
+		"ethical": "neutral"
+	},
+	"type": "small town",
+	"story": [
+		"Well known as a hub for adventuring, hailing cove exudes a bright and vibrant atmosphere. There is a constant",
+		"hustle and bustle and people can be seen arriving and leaving on a regular basis"
+	],
+	"modifiers": {
+		"corruption": 0,
+		"crime": 0,
+		"economy": 0,
+		"law": 0,
+		"lore": 0,
+		"society": 0
+	},
+	"localCasters": 0,
+	"baseLimit": 0,
+	"purchaseLimit": 0,
+	"qualities": [
+		"adventure site",
+		"broad minded"
+	],
+	"danger": 0,
+	"disadvantages": [],
+	"government": "autocracy"
 }

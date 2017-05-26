@@ -3,12 +3,16 @@
     "row": 21,
     "col": 43
   },
+  "cssClass": "pop-left pin-bottom",
   "alignment": {
-    "moral": "neutral",
+    "moral": "chaotic",
     "ethical": "neutral"
   },
   "type": "small town",
-  "story": "",
+  "story": [
+	"This settlement is designed as a druidic paradise. Unfortunately many who settled here did so out of fear so the",
+	"entire settlement is carved into the trees"
+  ],
   "modifiers": {
     "corruption": 0,
     "crime": 0,
@@ -20,8 +24,11 @@
   "localCasters": 0,
   "baseLimit": 0,
   "purchaseLimit": 0,
-  "qualities": [],
+  "qualities": [
+	"defensible",
+	"living forest"
+  ],
   "danger": 0,
   "disadvantages": [],
-  "government": "autocracy"
+  "government": "magical"
 }

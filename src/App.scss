@@ -159,13 +159,28 @@ body {
       width: $card-width - $label-width;
       text-transform: capitalize;
 	  &.nocaps, ul {
+	    box-sizing: border-box;
+		margin: 0;
+		padding: 5px;
 		text-transform: none;
+	  }
+	  
+	  &.half {
+		width: ($card-width - ($label-width * 2)) / 2;
 	  }
 	  
     }
   }
 
   &:hover {
+    &.pop-left .card {
+	  left: auto;
+	  right: 100%;
+    }
+    &.pin-bottom .card {
+	  top: auto;
+	  bottom: 0;
+    }
     .card {
       display: block;
       position: absolute;

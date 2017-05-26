@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 import {Settlement} from './Settlement';
 import worldinfo from './data/worldinfo.json';
-const settlementsCtx = require.context('./data/settlements', true, /^(.*\.(json$))[^.]*$/igm);
+const settlementsCtx = require.context('./data/settlements', true, /^(.*\.(json|js$))[^.]*$/igm);
 const settlements = [];
 settlementsCtx.keys().forEach((key) => {
     settlements.push({
-        name: key.replace(/^[.][/]/, '').replace(/[.]json$/, '').replace('-', ' '),
+        name: key.replace(/^[.][/]/, '').replace(/[.](js|json)$/, '').replace('-', ' '),
         data: settlementsCtx(key)
     });
 });
